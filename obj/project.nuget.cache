@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "fYSjHADQEUcYL+4Ihbu6x+/LCfiRg3MD3hBdozwfWWJMtO4vy3DY0+BRwDc3y+XQ8eGWQwHoNKZuXP+anTfh6Q==",
+  "success": true,
+  "projectFilePath": "/Users/nacho/Development/dotNet/restful_web_api/MagicVilla_VillaAPI/MagicVilla_VillaAPI.csproj",
+  "expectedPackageFiles": [
+    "/Users/nacho/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/nacho/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/nacho/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/Users/nacho/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/Users/nacho/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/Users/nacho/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
