@@ -1,0 +1,496 @@
+2022-12-29 15:22:58.530 -03:00 [INF] Now listening on: https://localhost:7092
+2022-12-29 15:22:58.546 -03:00 [INF] Now listening on: http://localhost:5105
+2022-12-29 15:22:58.548 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-29 15:22:58.548 -03:00 [INF] Hosting environment: Development
+2022-12-29 15:22:58.548 -03:00 [INF] Content root path: /Users/nacho/Development/dotNet/restful_web_api/MagicVilla_VillaAPI/
+2022-12-29 15:23:11.736 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/swagger/index.html - -
+2022-12-29 15:23:11.828 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/swagger/index.html - - - 200 - text/html;charset=utf-8 94.2695ms
+2022-12-29 15:23:11.840 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/swagger/swagger-ui-bundle.js - -
+2022-12-29 15:23:11.840 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/swagger/swagger-ui.css - -
+2022-12-29 15:23:11.851 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-12-29 15:23:11.851 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-12-29 15:23:11.852 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 11.8975ms
+2022-12-29 15:23:11.852 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/swagger/swagger-ui.css - - - 200 143632 text/css 11.1030ms
+2022-12-29 15:23:11.852 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/swagger/swagger-ui-standalone-preset.js - -
+2022-12-29 15:23:11.854 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-12-29 15:23:11.854 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 2.0718ms
+2022-12-29 15:23:11.931 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/swagger/v1/swagger.json - -
+2022-12-29 15:23:11.987 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 56.3042ms
+2022-12-29 15:23:18.714 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/api/VillaAPI - -
+2022-12-29 15:23:18.720 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 15:23:18.740 -03:00 [INF] Route matched with {action = "GetVillas", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MagicVilla_VillaAPI.Models.Dto.VillaDTO]] GetVillas() on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 15:23:18.823 -03:00 [INF] Getting all Villas
+2022-12-29 15:23:19.345 -03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+2022-12-29 15:23:19.374 -03:00 [WRN] No output formatter was found for content types '["text/plain"]' to write the response.
+2022-12-29 15:23:19.376 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI) in 633.2468ms
+2022-12-29 15:23:19.376 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 15:23:19.378 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/api/VillaAPI - - - 406 0 - 664.1542ms
+2022-12-29 15:23:56.740 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/api/VillaAPI - -
+2022-12-29 15:23:56.741 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 15:23:56.741 -03:00 [INF] Route matched with {action = "GetVillas", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MagicVilla_VillaAPI.Models.Dto.VillaDTO]] GetVillas() on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 15:23:56.742 -03:00 [INF] Getting all Villas
+2022-12-29 15:23:56.752 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+2022-12-29 15:23:56.753 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MagicVilla_VillaAPI.Models.Villa, MagicVilla_VillaAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-29 15:23:56.838 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI) in 97.3389ms
+2022-12-29 15:23:56.839 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 15:23:56.839 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/api/VillaAPI - - - 200 2023 application/json;+charset=utf-8 98.4256ms
+2022-12-29 15:25:56.229 -03:00 [INF] Now listening on: https://localhost:7092
+2022-12-29 15:25:56.245 -03:00 [INF] Now listening on: http://localhost:5105
+2022-12-29 15:25:56.247 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-29 15:25:56.247 -03:00 [INF] Hosting environment: Development
+2022-12-29 15:25:56.247 -03:00 [INF] Content root path: /Users/nacho/Development/dotNet/restful_web_api/MagicVilla_VillaAPI/
+2022-12-29 15:26:06.487 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/api/VillaAPI - -
+2022-12-29 15:26:06.518 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 15:26:06.525 -03:00 [INF] Route matched with {action = "GetVillas", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MagicVilla_VillaAPI.Models.Dto.VillaDTO]] GetVillas() on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 15:26:06.575 -03:00 [INF] Getting all Villas
+2022-12-29 15:26:07.087 -03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+2022-12-29 15:26:07.100 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MagicVilla_VillaAPI.Models.Villa, MagicVilla_VillaAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-29 15:26:07.145 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI) in 618.5896ms
+2022-12-29 15:26:07.145 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 15:26:07.149 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/api/VillaAPI - - - 200 2023 application/json;+charset=utf-8 664.8277ms
+2022-12-29 15:29:01.491 -03:00 [INF] Now listening on: https://localhost:7092
+2022-12-29 15:29:01.512 -03:00 [INF] Now listening on: http://localhost:5105
+2022-12-29 15:29:01.515 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-29 15:29:01.516 -03:00 [INF] Hosting environment: Development
+2022-12-29 15:29:01.516 -03:00 [INF] Content root path: /Users/nacho/Development/dotNet/restful_web_api/MagicVilla_VillaAPI/
+2022-12-29 15:30:26.421 -03:00 [INF] Now listening on: https://localhost:7092
+2022-12-29 15:30:26.436 -03:00 [INF] Now listening on: http://localhost:5105
+2022-12-29 15:30:26.438 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-29 15:30:26.438 -03:00 [INF] Hosting environment: Development
+2022-12-29 15:30:26.438 -03:00 [INF] Content root path: /Users/nacho/Development/dotNet/restful_web_api/MagicVilla_VillaAPI/
+2022-12-29 15:30:48.685 -03:00 [INF] Now listening on: https://localhost:7092
+2022-12-29 15:30:48.700 -03:00 [INF] Now listening on: http://localhost:5105
+2022-12-29 15:30:48.702 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-29 15:30:48.702 -03:00 [INF] Hosting environment: Development
+2022-12-29 15:30:48.702 -03:00 [INF] Content root path: /Users/nacho/Development/dotNet/restful_web_api/MagicVilla_VillaAPI/
+2022-12-29 15:30:59.955 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/api/VillaAPI - -
+2022-12-29 15:30:59.985 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 15:30:59.992 -03:00 [INF] Route matched with {action = "GetVillas", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MagicVilla_VillaAPI.Models.Dto.VillaDTO]] GetVillas() on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 15:31:00.042 -03:00 [INF] Getting all Villas
+2022-12-29 15:31:00.552 -03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+2022-12-29 15:31:00.565 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MagicVilla_VillaAPI.Models.Villa, MagicVilla_VillaAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-29 15:31:00.610 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI) in 616.3377ms
+2022-12-29 15:31:00.610 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 15:31:00.614 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/api/VillaAPI - - - 200 2023 application/json;+charset=utf-8 661.6180ms
+2022-12-29 15:32:44.928 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/api/VillaAPI/3 - -
+2022-12-29 15:32:44.929 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVilla (MagicVilla_VillaAPI)'
+2022-12-29 15:32:44.943 -03:00 [INF] Route matched with {action = "GetVilla", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[MagicVilla_VillaAPI.Models.Dto.VillaDTO] GetVilla(Int32) on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 15:32:45.047 -03:00 [INF] Executed DbCommand (38ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+WHERE [v].[Id] = @__id_0
+2022-12-29 15:32:45.067 -03:00 [INF] Executing OkObjectResult, writing value of type 'MagicVilla_VillaAPI.Models.Villa'.
+2022-12-29 15:32:45.067 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVilla (MagicVilla_VillaAPI) in 124.0538ms
+2022-12-29 15:32:45.067 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVilla (MagicVilla_VillaAPI)'
+2022-12-29 15:32:45.067 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/api/VillaAPI/3 - - - 200 405 application/json;+charset=utf-8 139.6555ms
+2022-12-29 15:34:09.581 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7092/api/VillaAPI application/json-patch+json 444
+2022-12-29 15:34:09.582 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.CreateVilla (MagicVilla_VillaAPI)'
+2022-12-29 15:34:09.583 -03:00 [INF] Route matched with {action = "CreateVilla", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[MagicVilla_VillaAPI.Models.Dto.VillaDTO] CreateVilla(MagicVilla_VillaAPI.Models.Dto.VillaDTO) on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 15:34:09.723 -03:00 [INF] Executed DbCommand (36ms) [Parameters=[@__ToLower_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+WHERE LOWER([v].[Name]) = @__ToLower_0
+2022-12-29 15:34:09.723 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2022-12-29 15:34:09.726 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.CreateVilla (MagicVilla_VillaAPI) in 143.0517ms
+2022-12-29 15:34:09.726 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.CreateVilla (MagicVilla_VillaAPI)'
+2022-12-29 15:34:09.727 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7092/api/VillaAPI application/json-patch+json 444 - 400 41 application/json;+charset=utf-8 145.8662ms
+2022-12-29 15:34:22.628 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7092/api/VillaAPI application/json-patch+json 433
+2022-12-29 15:34:22.628 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.CreateVilla (MagicVilla_VillaAPI)'
+2022-12-29 15:34:22.628 -03:00 [INF] Route matched with {action = "CreateVilla", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[MagicVilla_VillaAPI.Models.Dto.VillaDTO] CreateVilla(MagicVilla_VillaAPI.Models.Dto.VillaDTO) on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 15:34:22.638 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__ToLower_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+WHERE LOWER([v].[Name]) = @__ToLower_0
+2022-12-29 15:34:22.638 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2022-12-29 15:34:22.639 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.CreateVilla (MagicVilla_VillaAPI) in 10.3616ms
+2022-12-29 15:34:22.639 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.CreateVilla (MagicVilla_VillaAPI)'
+2022-12-29 15:34:22.639 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7092/api/VillaAPI application/json-patch+json 433 - 400 41 application/json;+charset=utf-8 11.1442ms
+2022-12-29 15:34:48.210 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7092/api/VillaAPI application/json-patch+json 346
+2022-12-29 15:34:48.210 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.CreateVilla (MagicVilla_VillaAPI)'
+2022-12-29 15:34:48.210 -03:00 [INF] Route matched with {action = "CreateVilla", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[MagicVilla_VillaAPI.Models.Dto.VillaDTO] CreateVilla(MagicVilla_VillaAPI.Models.Dto.VillaDTO) on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 15:34:48.219 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__ToLower_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+WHERE LOWER([v].[Name]) = @__ToLower_0
+2022-12-29 15:34:48.219 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2022-12-29 15:34:48.220 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.CreateVilla (MagicVilla_VillaAPI) in 9.3999ms
+2022-12-29 15:34:48.220 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.CreateVilla (MagicVilla_VillaAPI)'
+2022-12-29 15:34:48.220 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7092/api/VillaAPI application/json-patch+json 346 - 400 41 application/json;+charset=utf-8 9.9441ms
+2022-12-29 15:35:04.003 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7092/api/VillaAPI text/json 346
+2022-12-29 15:35:04.003 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.CreateVilla (MagicVilla_VillaAPI)'
+2022-12-29 15:35:04.003 -03:00 [INF] Route matched with {action = "CreateVilla", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[MagicVilla_VillaAPI.Models.Dto.VillaDTO] CreateVilla(MagicVilla_VillaAPI.Models.Dto.VillaDTO) on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 15:35:04.009 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__ToLower_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+WHERE LOWER([v].[Name]) = @__ToLower_0
+2022-12-29 15:35:04.010 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2022-12-29 15:35:04.010 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.CreateVilla (MagicVilla_VillaAPI) in 7.0223ms
+2022-12-29 15:35:04.010 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.CreateVilla (MagicVilla_VillaAPI)'
+2022-12-29 15:35:04.010 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7092/api/VillaAPI text/json 346 - 400 41 application/json;+charset=utf-8 7.5149ms
+2022-12-29 15:35:08.888 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7092/api/VillaAPI application/json 346
+2022-12-29 15:35:08.889 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.CreateVilla (MagicVilla_VillaAPI)'
+2022-12-29 15:35:08.889 -03:00 [INF] Route matched with {action = "CreateVilla", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[MagicVilla_VillaAPI.Models.Dto.VillaDTO] CreateVilla(MagicVilla_VillaAPI.Models.Dto.VillaDTO) on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 15:35:08.897 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__ToLower_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+WHERE LOWER([v].[Name]) = @__ToLower_0
+2022-12-29 15:35:08.897 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2022-12-29 15:35:08.898 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.CreateVilla (MagicVilla_VillaAPI) in 8.0774ms
+2022-12-29 15:35:08.898 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.CreateVilla (MagicVilla_VillaAPI)'
+2022-12-29 15:35:08.898 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7092/api/VillaAPI application/json 346 - 400 41 application/json;+charset=utf-8 9.4921ms
+2022-12-29 15:36:41.434 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7092/api/VillaAPI application/json 347
+2022-12-29 15:36:41.435 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.CreateVilla (MagicVilla_VillaAPI)'
+2022-12-29 15:36:41.436 -03:00 [INF] Route matched with {action = "CreateVilla", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[MagicVilla_VillaAPI.Models.Dto.VillaDTO] CreateVilla(MagicVilla_VillaAPI.Models.Dto.VillaDTO) on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 15:36:41.442 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__ToLower_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+WHERE LOWER([v].[Name]) = @__ToLower_0
+2022-12-29 15:36:41.443 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2022-12-29 15:36:41.443 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.CreateVilla (MagicVilla_VillaAPI) in 7.5852ms
+2022-12-29 15:36:41.443 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.CreateVilla (MagicVilla_VillaAPI)'
+2022-12-29 15:36:41.443 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7092/api/VillaAPI application/json 347 - 400 41 application/json;+charset=utf-8 9.1423ms
+2022-12-29 15:37:34.517 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7092/api/VillaAPI application/json 350
+2022-12-29 15:37:34.517 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.CreateVilla (MagicVilla_VillaAPI)'
+2022-12-29 15:37:34.517 -03:00 [INF] Route matched with {action = "CreateVilla", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[MagicVilla_VillaAPI.Models.Dto.VillaDTO] CreateVilla(MagicVilla_VillaAPI.Models.Dto.VillaDTO) on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 15:37:34.524 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__ToLower_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+WHERE LOWER([v].[Name]) = @__ToLower_0
+2022-12-29 15:37:34.630 -03:00 [INF] Executed DbCommand (17ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Double), @p7='?' (DbType = Int32), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Villas] ([Amenity], [CreatedDate], [Details], [ImageUrl], [Name], [Occupancy], [Rate], [Sqft], [UpdatedDate])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2022-12-29 15:37:34.642 -03:00 [INF] Executing CreatedAtRouteResult, writing value of type 'MagicVilla_VillaAPI.Models.Dto.VillaDTO'.
+2022-12-29 15:37:34.652 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.CreateVilla (MagicVilla_VillaAPI) in 135.3915ms
+2022-12-29 15:37:34.653 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.CreateVilla (MagicVilla_VillaAPI)'
+2022-12-29 15:37:34.653 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7092/api/VillaAPI application/json 350 - 201 329 application/json;+charset=utf-8 135.9490ms
+2022-12-29 15:37:50.818 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/api/VillaAPI - -
+2022-12-29 15:37:50.818 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 15:37:50.818 -03:00 [INF] Route matched with {action = "GetVillas", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MagicVilla_VillaAPI.Models.Dto.VillaDTO]] GetVillas() on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 15:37:50.819 -03:00 [INF] Getting all Villas
+2022-12-29 15:37:50.826 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+2022-12-29 15:37:50.827 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MagicVilla_VillaAPI.Models.Villa, MagicVilla_VillaAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-29 15:37:50.827 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI) in 8.3789ms
+2022-12-29 15:37:50.827 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 15:37:50.827 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/api/VillaAPI - - - 200 2425 application/json;+charset=utf-8 8.9317ms
+2022-12-29 15:38:24.257 -03:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7092/api/VillaAPI/6 - -
+2022-12-29 15:38:24.257 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.DeleteVilla (MagicVilla_VillaAPI)'
+2022-12-29 15:38:24.259 -03:00 [INF] Route matched with {action = "DeleteVilla", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult DeleteVilla(Int32) on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 15:38:24.266 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+WHERE [v].[Id] = @__id_0
+2022-12-29 15:38:24.297 -03:00 [INF] Executed DbCommand (15ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Villas]
+OUTPUT 1
+WHERE [Id] = @p0;
+2022-12-29 15:38:24.313 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-12-29 15:38:24.313 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.DeleteVilla (MagicVilla_VillaAPI) in 54.0942ms
+2022-12-29 15:38:24.313 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.DeleteVilla (MagicVilla_VillaAPI)'
+2022-12-29 15:38:24.313 -03:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7092/api/VillaAPI/6 - - - 204 - - 56.5496ms
+2022-12-29 15:38:35.989 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/api/VillaAPI - -
+2022-12-29 15:38:35.989 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 15:38:35.989 -03:00 [INF] Route matched with {action = "GetVillas", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MagicVilla_VillaAPI.Models.Dto.VillaDTO]] GetVillas() on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 15:38:35.989 -03:00 [INF] Getting all Villas
+2022-12-29 15:38:35.995 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+2022-12-29 15:38:35.995 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MagicVilla_VillaAPI.Models.Villa, MagicVilla_VillaAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-29 15:38:35.995 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI) in 6.2344ms
+2022-12-29 15:38:35.995 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 15:38:35.995 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/api/VillaAPI - - - 200 2023 application/json;+charset=utf-8 6.7485ms
+2022-12-29 15:39:42.083 -03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7092/api/VillaAPI/1 application/json-patch+json 375
+2022-12-29 15:39:42.083 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.UpdateVilla (MagicVilla_VillaAPI)'
+2022-12-29 15:39:42.084 -03:00 [INF] Route matched with {action = "UpdateVilla", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateVilla(Int32, MagicVilla_VillaAPI.Models.Dto.VillaDTO) on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 15:39:42.108 -03:00 [INF] Executed DbCommand (18ms) [Parameters=[@p9='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Double), @p7='?' (DbType = Int32), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Villas] SET [Amenity] = @p0, [CreatedDate] = @p1, [Details] = @p2, [ImageUrl] = @p3, [Name] = @p4, [Occupancy] = @p5, [Rate] = @p6, [Sqft] = @p7, [UpdatedDate] = @p8
+OUTPUT 1
+WHERE [Id] = @p9;
+2022-12-29 15:39:42.108 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-12-29 15:39:42.108 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.UpdateVilla (MagicVilla_VillaAPI) in 23.6615ms
+2022-12-29 15:39:42.108 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.UpdateVilla (MagicVilla_VillaAPI)'
+2022-12-29 15:39:42.108 -03:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7092/api/VillaAPI/1 application/json-patch+json 375 - 204 - - 25.7579ms
+2022-12-29 15:39:49.870 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/api/VillaAPI - -
+2022-12-29 15:39:49.870 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 15:39:49.870 -03:00 [INF] Route matched with {action = "GetVillas", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MagicVilla_VillaAPI.Models.Dto.VillaDTO]] GetVillas() on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 15:39:49.870 -03:00 [INF] Getting all Villas
+2022-12-29 15:39:49.877 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+2022-12-29 15:39:49.885 -03:00 [WRN] No output formatter was found for content types '["text/plain"]' to write the response.
+2022-12-29 15:39:49.886 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI) in 15.413ms
+2022-12-29 15:39:49.886 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 15:39:49.886 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/api/VillaAPI - - - 406 0 - 16.0231ms
+2022-12-29 15:40:02.809 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/api/VillaAPI - -
+2022-12-29 15:40:02.809 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 15:40:02.810 -03:00 [INF] Route matched with {action = "GetVillas", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MagicVilla_VillaAPI.Models.Dto.VillaDTO]] GetVillas() on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 15:40:02.810 -03:00 [INF] Getting all Villas
+2022-12-29 15:40:02.817 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+2022-12-29 15:40:02.818 -03:00 [WRN] No output formatter was found for content types '["text/plain"]' to write the response.
+2022-12-29 15:40:02.818 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI) in 8.4483ms
+2022-12-29 15:40:02.818 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 15:40:02.818 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/api/VillaAPI - - - 406 0 - 9.4160ms
+2022-12-29 15:40:09.683 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/api/VillaAPI - -
+2022-12-29 15:40:09.683 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 15:40:09.683 -03:00 [INF] Route matched with {action = "GetVillas", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MagicVilla_VillaAPI.Models.Dto.VillaDTO]] GetVillas() on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 15:40:09.684 -03:00 [INF] Getting all Villas
+2022-12-29 15:40:09.691 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+2022-12-29 15:40:09.691 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MagicVilla_VillaAPI.Models.Villa, MagicVilla_VillaAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-29 15:40:09.691 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI) in 8.1267ms
+2022-12-29 15:40:09.691 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 15:40:09.692 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/api/VillaAPI - - - 200 2023 application/json;+charset=utf-8 8.7928ms
+2022-12-29 16:39:20.036 -03:00 [INF] Now listening on: https://localhost:7092
+2022-12-29 16:39:20.052 -03:00 [INF] Now listening on: http://localhost:5105
+2022-12-29 16:39:20.054 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-29 16:39:20.055 -03:00 [INF] Hosting environment: Development
+2022-12-29 16:39:20.055 -03:00 [INF] Content root path: /Users/nacho/Development/dotNet/restful_web_api/MagicVilla_VillaAPI/
+2022-12-29 16:39:40.094 -03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7092/api/VillaAPI/1 application/json-patch+json 376
+2022-12-29 16:39:40.117 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.UpdateVilla (MagicVilla_VillaAPI)'
+2022-12-29 16:39:40.129 -03:00 [INF] Route matched with {action = "UpdateVilla", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateVilla(Int32, MagicVilla_VillaAPI.Models.Dto.VillaDTO) on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 16:39:40.797 -03:00 [INF] Executed DbCommand (22ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+WHERE [v].[Id] = @__id_0
+2022-12-29 16:39:40.837 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.UpdateVilla (MagicVilla_VillaAPI) in 705.5431ms
+2022-12-29 16:39:40.837 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.UpdateVilla (MagicVilla_VillaAPI)'
+2022-12-29 16:39:40.839 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The instance of entity type 'Villa' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Update(TEntity entity)
+   at MagicVilla_VillaAPI.Controllers.VillaAPIController.UpdateVilla(Int32 id, VillaDTO villaDTO) in /Users/nacho/Development/dotNet/restful_web_api/MagicVilla_VillaAPI/Controllers/VillaAPIController.cs:line 165
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-12-29 16:39:40.851 -03:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7092/api/VillaAPI/1 application/json-patch+json 376 - 500 - text/plain;+charset=utf-8 759.3779ms
+2022-12-29 16:40:50.240 -03:00 [INF] Now listening on: https://localhost:7092
+2022-12-29 16:40:50.255 -03:00 [INF] Now listening on: http://localhost:5105
+2022-12-29 16:40:50.257 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-29 16:40:50.257 -03:00 [INF] Hosting environment: Development
+2022-12-29 16:40:50.257 -03:00 [INF] Content root path: /Users/nacho/Development/dotNet/restful_web_api/MagicVilla_VillaAPI/
+2022-12-29 16:40:55.788 -03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7092/api/VillaAPI/1 application/json-patch+json 376
+2022-12-29 16:40:55.812 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.UpdateVilla (MagicVilla_VillaAPI)'
+2022-12-29 16:40:55.825 -03:00 [INF] Route matched with {action = "UpdateVilla", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateVilla(Int32, MagicVilla_VillaAPI.Models.Dto.VillaDTO) on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 16:40:56.477 -03:00 [INF] Executed DbCommand (21ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+WHERE [v].[Id] = @__id_0
+2022-12-29 16:40:56.520 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+WHERE [v].[Id] = @__id_0
+2022-12-29 16:40:56.529 -03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+WHERE [v].[Id] = @__id_0
+2022-12-29 16:40:56.572 -03:00 [INF] Executed DbCommand (12ms) [Parameters=[@p9='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Double), @p7='?' (DbType = Int32), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Villas] SET [Amenity] = @p0, [CreatedDate] = @p1, [Details] = @p2, [ImageUrl] = @p3, [Name] = @p4, [Occupancy] = @p5, [Rate] = @p6, [Sqft] = @p7, [UpdatedDate] = @p8
+OUTPUT 1
+WHERE [Id] = @p9;
+2022-12-29 16:40:56.577 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-12-29 16:40:56.579 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.UpdateVilla (MagicVilla_VillaAPI) in 752.6399ms
+2022-12-29 16:40:56.580 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.UpdateVilla (MagicVilla_VillaAPI)'
+2022-12-29 16:40:56.583 -03:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7092/api/VillaAPI/1 application/json-patch+json 376 - 204 - - 798.6184ms
+2022-12-29 16:41:06.857 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/api/VillaAPI - -
+2022-12-29 16:41:06.881 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 16:41:06.884 -03:00 [INF] Route matched with {action = "GetVillas", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MagicVilla_VillaAPI.Models.Dto.VillaDTO]] GetVillas() on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 16:41:06.885 -03:00 [INF] Getting all Villas
+2022-12-29 16:41:06.898 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+2022-12-29 16:41:06.907 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MagicVilla_VillaAPI.Models.Villa, MagicVilla_VillaAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-29 16:41:06.946 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI) in 61.9673ms
+2022-12-29 16:41:06.946 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 16:41:06.946 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/api/VillaAPI - - - 200 2024 application/json;+charset=utf-8 89.0625ms
+2022-12-29 16:41:27.623 -03:00 [INF] Now listening on: https://localhost:7092
+2022-12-29 16:41:27.639 -03:00 [INF] Now listening on: http://localhost:5105
+2022-12-29 16:41:27.641 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-29 16:41:27.641 -03:00 [INF] Hosting environment: Development
+2022-12-29 16:41:27.641 -03:00 [INF] Content root path: /Users/nacho/Development/dotNet/restful_web_api/MagicVilla_VillaAPI/
+2022-12-29 16:41:47.009 -03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7092/api/VillaAPI/1 application/json-patch+json 376
+2022-12-29 16:41:47.032 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.UpdateVilla (MagicVilla_VillaAPI)'
+2022-12-29 16:41:47.045 -03:00 [INF] Route matched with {action = "UpdateVilla", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateVilla(Int32, MagicVilla_VillaAPI.Models.Dto.VillaDTO) on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 16:41:47.712 -03:00 [INF] Executed DbCommand (22ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+WHERE [v].[Id] = @__id_0
+2022-12-29 16:41:47.756 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+WHERE [v].[Id] = @__id_0
+2022-12-29 16:41:47.763 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+WHERE [v].[Id] = @__id_0
+2022-12-29 16:41:47.806 -03:00 [INF] Executed DbCommand (12ms) [Parameters=[@p9='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Double), @p7='?' (DbType = Int32), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Villas] SET [Amenity] = @p0, [CreatedDate] = @p1, [Details] = @p2, [ImageUrl] = @p3, [Name] = @p4, [Occupancy] = @p5, [Rate] = @p6, [Sqft] = @p7, [UpdatedDate] = @p8
+OUTPUT 1
+WHERE [Id] = @p9;
+2022-12-29 16:41:47.812 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-12-29 16:41:47.814 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.UpdateVilla (MagicVilla_VillaAPI) in 767.181ms
+2022-12-29 16:41:47.814 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.UpdateVilla (MagicVilla_VillaAPI)'
+2022-12-29 16:41:47.818 -03:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7092/api/VillaAPI/1 application/json-patch+json 376 - 204 - - 811.2695ms
+2022-12-29 16:41:54.578 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/api/VillaAPI - -
+2022-12-29 16:41:54.589 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 16:41:54.591 -03:00 [INF] Route matched with {action = "GetVillas", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MagicVilla_VillaAPI.Models.Dto.VillaDTO]] GetVillas() on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 16:41:54.592 -03:00 [INF] Getting all Villas
+2022-12-29 16:41:54.607 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+2022-12-29 16:41:54.612 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MagicVilla_VillaAPI.Models.Villa, MagicVilla_VillaAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-29 16:41:54.649 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI) in 57.6102ms
+2022-12-29 16:41:54.649 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 16:41:54.649 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/api/VillaAPI - - - 200 2031 application/json;+charset=utf-8 71.2197ms
+2022-12-29 16:42:57.121 -03:00 [INF] Now listening on: https://localhost:7092
+2022-12-29 16:42:57.137 -03:00 [INF] Now listening on: http://localhost:5105
+2022-12-29 16:42:57.139 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-29 16:42:57.139 -03:00 [INF] Hosting environment: Development
+2022-12-29 16:42:57.139 -03:00 [INF] Content root path: /Users/nacho/Development/dotNet/restful_web_api/MagicVilla_VillaAPI/
+2022-12-29 16:43:03.521 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/api/VillaAPI - -
+2022-12-29 16:43:03.553 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 16:43:03.560 -03:00 [INF] Route matched with {action = "GetVillas", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MagicVilla_VillaAPI.Models.Dto.VillaDTO]] GetVillas() on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 16:43:03.610 -03:00 [INF] Getting all Villas
+2022-12-29 16:43:04.124 -03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+2022-12-29 16:43:04.138 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MagicVilla_VillaAPI.Models.Villa, MagicVilla_VillaAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-29 16:43:04.183 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI) in 620.9889ms
+2022-12-29 16:43:04.183 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 16:43:04.187 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/api/VillaAPI - - - 200 2031 application/json;+charset=utf-8 668.2107ms
+2022-12-29 16:43:34.744 -03:00 [INF] Now listening on: https://localhost:7092
+2022-12-29 16:43:34.759 -03:00 [INF] Now listening on: http://localhost:5105
+2022-12-29 16:43:34.761 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-29 16:43:34.761 -03:00 [INF] Hosting environment: Development
+2022-12-29 16:43:34.761 -03:00 [INF] Content root path: /Users/nacho/Development/dotNet/restful_web_api/MagicVilla_VillaAPI/
+2022-12-29 16:43:44.622 -03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7092/api/VillaAPI/1 application/json-patch+json 376
+2022-12-29 16:43:44.645 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.UpdateVilla (MagicVilla_VillaAPI)'
+2022-12-29 16:43:44.657 -03:00 [INF] Route matched with {action = "UpdateVilla", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateVilla(Int32, MagicVilla_VillaAPI.Models.Dto.VillaDTO) on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 16:43:45.346 -03:00 [INF] Executed DbCommand (21ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+WHERE [v].[Id] = @__id_0
+2022-12-29 16:43:45.365 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+WHERE [v].[Id] = @__id_0
+2022-12-29 16:43:45.407 -03:00 [INF] Executed DbCommand (12ms) [Parameters=[@p9='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Double), @p7='?' (DbType = Int32), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Villas] SET [Amenity] = @p0, [CreatedDate] = @p1, [Details] = @p2, [ImageUrl] = @p3, [Name] = @p4, [Occupancy] = @p5, [Rate] = @p6, [Sqft] = @p7, [UpdatedDate] = @p8
+OUTPUT 1
+WHERE [Id] = @p9;
+2022-12-29 16:43:45.413 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-12-29 16:43:45.415 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.UpdateVilla (MagicVilla_VillaAPI) in 756.0816ms
+2022-12-29 16:43:45.416 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.UpdateVilla (MagicVilla_VillaAPI)'
+2022-12-29 16:43:45.420 -03:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7092/api/VillaAPI/1 application/json-patch+json 376 - 204 - - 800.4874ms
+2022-12-29 16:43:50.159 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/api/VillaAPI - -
+2022-12-29 16:43:50.171 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 16:43:50.173 -03:00 [INF] Route matched with {action = "GetVillas", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MagicVilla_VillaAPI.Models.Dto.VillaDTO]] GetVillas() on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 16:43:50.174 -03:00 [INF] Getting all Villas
+2022-12-29 16:43:50.221 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+2022-12-29 16:43:50.228 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MagicVilla_VillaAPI.Models.Villa, MagicVilla_VillaAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-29 16:43:50.253 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI) in 80.0433ms
+2022-12-29 16:43:50.253 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 16:43:50.253 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/api/VillaAPI - - - 200 2037 application/json;+charset=utf-8 94.3512ms
+2022-12-29 16:44:16.175 -03:00 [INF] Now listening on: https://localhost:7092
+2022-12-29 16:44:16.191 -03:00 [INF] Now listening on: http://localhost:5105
+2022-12-29 16:44:16.193 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-29 16:44:16.193 -03:00 [INF] Hosting environment: Development
+2022-12-29 16:44:16.194 -03:00 [INF] Content root path: /Users/nacho/Development/dotNet/restful_web_api/MagicVilla_VillaAPI/
+2022-12-29 16:44:22.811 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/api/VillaAPI - -
+2022-12-29 16:44:22.843 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 16:44:22.850 -03:00 [INF] Route matched with {action = "GetVillas", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MagicVilla_VillaAPI.Models.Dto.VillaDTO]] GetVillas() on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 16:44:22.900 -03:00 [INF] Getting all Villas
+2022-12-29 16:44:23.417 -03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+2022-12-29 16:44:23.430 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MagicVilla_VillaAPI.Models.Villa, MagicVilla_VillaAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-29 16:44:23.475 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI) in 623.6908ms
+2022-12-29 16:44:23.475 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 16:44:23.479 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/api/VillaAPI - - - 200 2037 application/json;+charset=utf-8 670.1800ms
+2022-12-29 16:44:45.237 -03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7092/api/VillaAPI/1 application/json-patch+json 372
+2022-12-29 16:44:45.239 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.UpdateVilla (MagicVilla_VillaAPI)'
+2022-12-29 16:44:45.255 -03:00 [INF] Route matched with {action = "UpdateVilla", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateVilla(Int32, MagicVilla_VillaAPI.Models.Dto.VillaDTO) on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 16:44:45.359 -03:00 [INF] Executed DbCommand (18ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+WHERE [v].[Id] = @__id_0
+2022-12-29 16:44:45.389 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+WHERE [v].[Id] = @__id_0
+2022-12-29 16:44:45.396 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+WHERE [v].[Id] = @__id_0
+2022-12-29 16:44:45.445 -03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p9='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Double), @p7='?' (DbType = Int32), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Villas] SET [Amenity] = @p0, [CreatedDate] = @p1, [Details] = @p2, [ImageUrl] = @p3, [Name] = @p4, [Occupancy] = @p5, [Rate] = @p6, [Sqft] = @p7, [UpdatedDate] = @p8
+OUTPUT 1
+WHERE [Id] = @p9;
+2022-12-29 16:44:45.451 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-12-29 16:44:45.451 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.UpdateVilla (MagicVilla_VillaAPI) in 195.9139ms
+2022-12-29 16:44:45.451 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.UpdateVilla (MagicVilla_VillaAPI)'
+2022-12-29 16:44:45.451 -03:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7092/api/VillaAPI/1 application/json-patch+json 372 - 204 - - 214.1977ms
+2022-12-29 16:44:54.285 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/api/VillaAPI - -
+2022-12-29 16:44:54.286 -03:00 [INF] Executing endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 16:44:54.286 -03:00 [INF] Route matched with {action = "GetVillas", controller = "VillaAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MagicVilla_VillaAPI.Models.Dto.VillaDTO]] GetVillas() on controller MagicVilla_VillaAPI.Controllers.VillaAPIController (MagicVilla_VillaAPI).
+2022-12-29 16:44:54.288 -03:00 [INF] Getting all Villas
+2022-12-29 16:44:54.346 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[Id], [v].[Amenity], [v].[CreatedDate], [v].[Details], [v].[ImageUrl], [v].[Name], [v].[Occupancy], [v].[Rate], [v].[Sqft], [v].[UpdatedDate]
+FROM [Villas] AS [v]
+2022-12-29 16:44:54.346 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MagicVilla_VillaAPI.Models.Villa, MagicVilla_VillaAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-29 16:44:54.346 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI) in 60.1452ms
+2022-12-29 16:44:54.346 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaAPIController.GetVillas (MagicVilla_VillaAPI)'
+2022-12-29 16:44:54.347 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/api/VillaAPI - - - 200 2033 application/json;+charset=utf-8 61.3082ms

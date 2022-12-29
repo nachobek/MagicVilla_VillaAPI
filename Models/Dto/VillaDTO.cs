@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Mvc;
 
 namespace MagicVilla_VillaAPI.Models.Dto
 {
@@ -25,5 +26,10 @@ namespace MagicVilla_VillaAPI.Models.Dto
         public string ImageUrl { get; set; }
 
         public string Amenity { get; set; }
+
+        public static explicit operator VillaDTO(OkObjectResult v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
