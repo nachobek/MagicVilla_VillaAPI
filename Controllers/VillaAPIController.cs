@@ -1,4 +1,5 @@
 using System.Linq;
+using AutoMapper;
 using MagicVilla_VillaAPI.Data;
 using MagicVilla_VillaAPI.Models;
 using MagicVilla_VillaAPI.Models.Dto;
@@ -16,20 +17,24 @@ namespace MagicVilla_VillaAPI.Controllers
     {
         private readonly ILogger<VillaAPIController> _logger;
         private readonly ApplicationDbContext _db;
+        private readonly IMapper _mapper;
 
-        public VillaAPIController(ILogger<VillaAPIController> logger, ApplicationDbContext db)
+        public VillaAPIController(ILogger<VillaAPIController> logger, ApplicationDbContext db, IMapper mapper)
         {
             _logger = logger;
             _db = db;
+            _mapper = mapper;
         }
 
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<VillaReadDTO>>> GetVillas()
         {
+            IEnumerable<Villa> villaList = await _db.Villas.AsNoTracking().ToListAsync();
+
             _logger.LogInformation("Getting all Villas");
-            return Ok(await _db.Villas.AsNoTracking().ToListAsync());
-            // return Ok((IEnumerable<VillaDTO>)_db.Villas.AsNoTracking().ToList()); // Return Ok(Villas) is not possible since the method was defined to return a VillaDTO type, so cast is added to transform Villa to VillaDTO.
+
+            return Ok(_mapper.Map<IEnumerable<VillaReadDTO>>(villaList)); // Doing List<VillaReadDTO> as target also works.
         }
 
         [HttpGet("{id:int}", Name = "GetVilla")] // This Name attribute is used in the CreatedAtRoute method down below. Without it, the said method call won't work.
@@ -45,8 +50,6 @@ namespace MagicVilla_VillaAPI.Controllers
                 return BadRequest($"Villa ID: {id} not valid");
             }
 
-            // var villa = _db.Villas.FirstOrDefault( u => u.Id == id);
-
             var villa = await _db.Villas.FirstOrDefaultAsync( v => v.Id == id);
 
             if (villa == null)
@@ -55,7 +58,7 @@ namespace MagicVilla_VillaAPI.Controllers
             }
             else
             {
-                return Ok(villa);
+                return Ok(_mapper.Map<VillaReadDTO>(villa));
             }
         }
 
@@ -82,17 +85,9 @@ namespace MagicVilla_VillaAPI.Controllers
                 return BadRequest(villaCreateDTO);
             }
 
-            Villa villaFromVillaCreateDTO = new()
-            {
-                Amenity = villaCreateDTO.Amenity,
-                Details = villaCreateDTO.Details,
-                ImageUrl = villaCreateDTO.ImageUrl,
-                Name = villaCreateDTO.Name,
-                Occupancy = villaCreateDTO.Occupancy,
-                Rate = villaCreateDTO.Rate,
-                Sqft = villaCreateDTO.Sqft,
-                CreatedDate = DateTime.Now
-            };
+            Villa villaFromVillaCreateDTO = _mapper.Map<Villa>(villaCreateDTO);
+
+            villaFromVillaCreateDTO.CreatedDate = DateTime.Now;
 
             await _db.Villas.AddAsync(villaFromVillaCreateDTO);
             await _db.SaveChangesAsync();
@@ -151,19 +146,10 @@ namespace MagicVilla_VillaAPI.Controllers
                 return NotFound();
             }
 
-            Villa villaFromVillaUpdateDTO = new()
-            {
-                Amenity = villaUpdateDTO.Amenity,
-                Details = villaUpdateDTO.Details,
-                Id = villaUpdateDTO.Id,
-                ImageUrl = villaUpdateDTO.ImageUrl,
-                Name = villaUpdateDTO.Name,
-                Occupancy = villaUpdateDTO.Occupancy,
-                Rate = villaUpdateDTO.Rate,
-                Sqft = villaUpdateDTO.Sqft,
-                CreatedDate = villa.CreatedDate,
-                UpdatedDate = DateTime.Now
-            };
+            Villa villaFromVillaUpdateDTO = _mapper.Map<Villa>(villaUpdateDTO);
+
+            villaFromVillaUpdateDTO.CreatedDate = villa.CreatedDate;
+            villaFromVillaUpdateDTO.UpdatedDate = DateTime.Now;
 
             _db.Villas.Update(villaFromVillaUpdateDTO);
             await _db.SaveChangesAsync();
@@ -190,34 +176,17 @@ namespace MagicVilla_VillaAPI.Controllers
             }
             else
             {
-                VillaUpdateDTO villaDTOFromVilla = new()
-                {
-                    Amenity = villa.Amenity,
-                    Details = villa.Details,
-                    Id = villa.Id,
-                    ImageUrl = villa.ImageUrl,
-                    Name = villa.Name,
-                    Occupancy = villa.Occupancy,
-                    Rate = villa.Rate,
-                    Sqft = villa.Sqft
-                };
+                VillaUpdateDTO villaDTOFromVilla = _mapper.Map<VillaUpdateDTO>(villa); // Convert the Ville found by the given Id into VillaUpdateDTO object, so the ApplyTo patch command can be applied.
 
                 villaDTOPatch.ApplyTo(villaDTOFromVilla, ModelState); // Using the JsonPatch object functionality to update the specific property passed for that particular villa object.
                 
-                Villa villaFromVillaDTO = new()
-                {
-                    Amenity = villaDTOFromVilla.Amenity,
-                    Details = villaDTOFromVilla.Details,
-                    Id = villaDTOFromVilla.Id,
-                    ImageUrl = villaDTOFromVilla.ImageUrl,
-                    Name = villaDTOFromVilla.Name,
-                    Occupancy = villaDTOFromVilla.Occupancy,
-                    Rate = villaDTOFromVilla.Rate,
-                    Sqft = villaDTOFromVilla.Sqft
-                };
+                Villa villaFromVillaDTO = _mapper.Map<Villa>(villaDTOFromVilla); // Convert the modified object back to Villa type so the changes can be persisted in the DB.
+
+                villaFromVillaDTO.UpdatedDate = DateTime.Now;
+                villaFromVillaDTO.CreatedDate = villa.CreatedDate;
 
                 _db.Villas.Update(villaFromVillaDTO);
-                _db.SaveChanges();
+                await _db.SaveChangesAsync();
 
                 if (!ModelState.IsValid)
                 {

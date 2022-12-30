@@ -93,3 +93,5 @@
 /Users/nacho/Development/dotNet/restful_web_api/MagicVilla_VillaAPI/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
 /Users/nacho/Development/dotNet/restful_web_api/MagicVilla_VillaAPI/bin/Debug/net6.0/runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll
 /Users/nacho/Development/dotNet/restful_web_api/MagicVilla_VillaAPI/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
+/Users/nacho/Development/dotNet/restful_web_api/MagicVilla_VillaAPI/bin/Debug/net6.0/AutoMapper.dll
+/Users/nacho/Development/dotNet/restful_web_api/MagicVilla_VillaAPI/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll

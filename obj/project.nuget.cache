@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "u2jrkau8Bg2zrVLI6NKmUn/LLYpw/f6hwJD4eFDYb1lGePl6rlWEOkKumvPleA7cfguWloSK++gDWJRsIzczAw==",
+  "dgSpecHash": "0OWC6AA2ecFDG26qQoFCfMaFleYQSHfdopSvl7O75WRApeHQbylEdRgsHDeMESHb83p+oZPTN5NnrvqC1crQMw==",
   "success": true,
   "projectFilePath": "/Users/nacho/Development/dotNet/restful_web_api/MagicVilla_VillaAPI/MagicVilla_VillaAPI.csproj",
   "expectedPackageFiles": [
+    "/Users/nacho/.nuget/packages/automapper/12.0.0/automapper.12.0.0.nupkg.sha512",
+    "/Users/nacho/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.0/automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "/Users/nacho/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/nacho/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
     "/Users/nacho/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",

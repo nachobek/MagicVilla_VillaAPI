@@ -1,3 +1,4 @@
+using MagicVilla_VillaAPI;
 using MagicVilla_VillaAPI.Data;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
@@ -10,6 +11,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ApplicationDbContext> (option => {
     option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultSQLConnection"));
 });
+
+//Adding AutoMapper service.
+builder.Services.AddAutoMapper(typeof(MappingConfig));
 
 // Since we installed the Serilog package to log messages to a flat file. We need to modify the default Log implementation/settings so it uses Serilog.
 // First we set up Serilog the way we want it.
