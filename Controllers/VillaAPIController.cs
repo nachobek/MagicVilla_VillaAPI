@@ -3,6 +3,7 @@ using AutoMapper;
 using MagicVilla_VillaAPI.Data;
 using MagicVilla_VillaAPI.Models;
 using MagicVilla_VillaAPI.Models.Dto;
+using MagicVilla_VillaAPI.Repository.IRepository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
@@ -16,13 +17,13 @@ namespace MagicVilla_VillaAPI.Controllers
     public class VillaAPIController : ControllerBase
     {
         private readonly ILogger<VillaAPIController> _logger;
-        private readonly ApplicationDbContext _db;
+        private readonly IVillaRepository _villaRepository;
         private readonly IMapper _mapper;
 
-        public VillaAPIController(ILogger<VillaAPIController> logger, ApplicationDbContext db, IMapper mapper)
+        public VillaAPIController(ILogger<VillaAPIController> logger, IVillaRepository villaRepository, IMapper mapper)
         {
             _logger = logger;
-            _db = db;
+            _villaRepository = villaRepository;
             _mapper = mapper;
         }
 
@@ -30,7 +31,7 @@ namespace MagicVilla_VillaAPI.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<VillaReadDTO>>> GetVillas()
         {
-            IEnumerable<Villa> villaList = await _db.Villas.AsNoTracking().ToListAsync();
+            IEnumerable<Villa> villaList = await _villaRepository.GetAllAsync();
 
             _logger.LogInformation("Getting all Villas");
 
@@ -50,7 +51,7 @@ namespace MagicVilla_VillaAPI.Controllers
                 return BadRequest($"Villa ID: {id} not valid");
             }
 
-            var villa = await _db.Villas.FirstOrDefaultAsync( v => v.Id == id);
+            var villa = await _villaRepository.GetOneAsync( v => v.Id == id, false);
 
             if (villa == null)
             {
@@ -74,7 +75,7 @@ namespace MagicVilla_VillaAPI.Controllers
             //     return BadRequest(ModelState);
             // }
 
-            if (await _db.Villas.FirstOrDefaultAsync(v => v.Name.ToLower() == villaCreateDTO.Name.ToLower()) != null) // If it's not null it means it found a villa where the name matches the name being passed.
+            if (await _villaRepository.GetOneAsync(v => v.Name.ToLower() == villaCreateDTO.Name.ToLower(), false) != null) // If it's not null it means it found a villa where the name matches the name being passed.
             {
                 ModelState.AddModelError("CustomError", "Villa already exists."); // CustomError is the key of the error message we are adding to ModelState.
                 return BadRequest(ModelState);
@@ -89,8 +90,7 @@ namespace MagicVilla_VillaAPI.Controllers
 
             villaFromVillaCreateDTO.CreatedDate = DateTime.Now;
 
-            await _db.Villas.AddAsync(villaFromVillaCreateDTO);
-            await _db.SaveChangesAsync();
+            await _villaRepository.CreateAsync(villaFromVillaCreateDTO);
 
             // A common practice is to return the path/URI of the object that was just created rather than just a 200 OK.
             // return Ok(villaDTO);
@@ -113,15 +113,14 @@ namespace MagicVilla_VillaAPI.Controllers
                 return BadRequest();
             }
 
-            var villa = await _db.Villas.FirstOrDefaultAsync( v => v.Id == id);
+            var villa = await _villaRepository.GetOneAsync( v => v.Id == id, true);
 
             if (villa == null)
             {
                 return NotFound();
             }
 
-            _db.Villas.Remove(villa);
-            await _db.SaveChangesAsync();
+            await _villaRepository.RemoveAsync(villa);
 
             return NoContent();
         }
@@ -139,7 +138,7 @@ namespace MagicVilla_VillaAPI.Controllers
                 return BadRequest();
             }
 
-            var villa = await _db.Villas.AsNoTracking().FirstOrDefaultAsync( v => v.Id == id);
+            var villa = await _villaRepository.GetOneAsync( v => v.Id == id, false);
 
             if (villa == null)
             {
@@ -151,8 +150,7 @@ namespace MagicVilla_VillaAPI.Controllers
             villaFromVillaUpdateDTO.CreatedDate = villa.CreatedDate;
             villaFromVillaUpdateDTO.UpdatedDate = DateTime.Now;
 
-            _db.Villas.Update(villaFromVillaUpdateDTO);
-            await _db.SaveChangesAsync();
+            await _villaRepository.UpdateAsync(villaFromVillaUpdateDTO);
 
             return NoContent();
         }
@@ -168,7 +166,7 @@ namespace MagicVilla_VillaAPI.Controllers
                 return BadRequest();
             }
 
-            var villa = await _db.Villas.AsNoTracking().FirstOrDefaultAsync( v => v.Id == id);
+            var villa = await _villaRepository.GetOneAsync( v => v.Id == id, false);
 
             if ( villa == null )
             {
@@ -185,8 +183,7 @@ namespace MagicVilla_VillaAPI.Controllers
                 villaFromVillaDTO.UpdatedDate = DateTime.Now;
                 villaFromVillaDTO.CreatedDate = villa.CreatedDate;
 
-                _db.Villas.Update(villaFromVillaDTO);
-                await _db.SaveChangesAsync();
+                await _villaRepository.UpdateAsync(villaFromVillaDTO);
 
                 if (!ModelState.IsValid)
                 {
