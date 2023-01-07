@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MagicVilla_VillaAPI.Models
 {
-    class VillaNumber
+    public class VillaNumber
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int VillaNo { get; set; }
@@ -12,6 +12,6 @@ namespace MagicVilla_VillaAPI.Models
 
         public DateTime CreatedDate { get; set; }
 
-        public DateTime UpdateDate { get; set; }
+        public DateTime UpdatedDate { get; set; }
     }
 }

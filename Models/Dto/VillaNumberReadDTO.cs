@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace MagicVilla_VillaAPI.Models
 {
-    class VillaNumberReadDTO
+    public class VillaNumberReadDTO
     {
         [Required]
         public int VillaNo { get; set; }
