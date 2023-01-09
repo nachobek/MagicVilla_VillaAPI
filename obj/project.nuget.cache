@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0OWC6AA2ecFDG26qQoFCfMaFleYQSHfdopSvl7O75WRApeHQbylEdRgsHDeMESHb83p+oZPTN5NnrvqC1crQMw==",
+  "dgSpecHash": "I7xlyrbTRFTjuZQyHIsoXC40ZczmXiJZ4ex+tDvu2qCVLKb82pdgBBbgBlcKD9molyr3KiBPDnWOpT6T73782g==",
   "success": true,
-  "projectFilePath": "/Users/nacho/Development/dotNet/restful_web_api/MagicVilla_VillaAPI/MagicVilla_VillaAPI.csproj",
+  "projectFilePath": "/Users/nacho/Development/dotNet/restful_web_api/MagicVilla/MagicVilla_VillaAPI/MagicVilla_VillaAPI.csproj",
   "expectedPackageFiles": [
     "/Users/nacho/.nuget/packages/automapper/12.0.0/automapper.12.0.0.nupkg.sha512",
     "/Users/nacho/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.0/automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

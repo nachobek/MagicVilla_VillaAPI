@@ -18,3 +18,74 @@ WHERE [v].[Id] = @__villaNumberCreateDTO_VillaId_0
 2023-01-08 18:34:18.914 -03:00 [INF] Executed action MagicVilla_VillaAPI.Controllers.VillaNumberAPIController.CreateAllVillaNumber (MagicVilla_VillaAPI) in 882.8765ms
 2023-01-08 18:34:18.914 -03:00 [INF] Executed endpoint 'MagicVilla_VillaAPI.Controllers.VillaNumberAPIController.CreateAllVillaNumber (MagicVilla_VillaAPI)'
 2023-01-08 18:34:18.918 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7092/api/VillaNumberAPI/VillaNumbers application/json-patch+json 82 - 400 415 application/json;+charset=utf-8 932.3948ms
+2023-01-08 19:01:43.420 -03:00 [INF] Now listening on: https://localhost:7092
+2023-01-08 19:01:43.435 -03:00 [INF] Now listening on: http://localhost:5105
+2023-01-08 19:01:43.437 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-08 19:01:43.438 -03:00 [INF] Hosting environment: Development
+2023-01-08 19:01:43.438 -03:00 [INF] Content root path: /Users/nacho/Development/dotNet/restful_web_api/MagicVilla_VillaAPI/
+2023-01-08 19:04:23.716 -03:00 [INF] Now listening on: https://localhost:7092
+2023-01-08 19:04:23.732 -03:00 [INF] Now listening on: http://localhost:5105
+2023-01-08 19:04:23.734 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-08 19:04:23.734 -03:00 [INF] Hosting environment: Development
+2023-01-08 19:04:23.734 -03:00 [INF] Content root path: /Users/nacho/Development/dotNet/restful_web_api/MagicVilla_VillaAPI/
+2023-01-08 19:04:33.182 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/swagger/index.html - -
+2023-01-08 19:04:33.276 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/swagger/index.html - - - 200 - text/html;charset=utf-8 96.4652ms
+2023-01-08 19:04:33.387 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/swagger/v1/swagger.json - -
+2023-01-08 19:04:33.454 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 67.6062ms
+2023-01-08 21:02:31.813 -03:00 [INF] Now listening on: https://localhost:7092
+2023-01-08 21:02:31.829 -03:00 [INF] Now listening on: http://localhost:5105
+2023-01-08 21:02:31.831 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-08 21:02:31.831 -03:00 [INF] Hosting environment: Development
+2023-01-08 21:02:31.831 -03:00 [INF] Content root path: /Users/nacho/Development/dotNet/restful_web_api/MagicVilla/src/MagicVilla_VillaAPI/
+2023-01-08 21:03:14.763 -03:00 [INF] Now listening on: https://localhost:7092
+2023-01-08 21:03:14.779 -03:00 [INF] Now listening on: http://localhost:5105
+2023-01-08 21:03:14.781 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-08 21:03:14.781 -03:00 [INF] Hosting environment: Development
+2023-01-08 21:03:14.781 -03:00 [INF] Content root path: /Users/nacho/Development/dotNet/restful_web_api/MagicVilla/src/MagicVilla_VillaAPI/
+2023-01-08 21:04:06.986 -03:00 [INF] Now listening on: https://localhost:7092
+2023-01-08 21:04:07.001 -03:00 [INF] Now listening on: http://localhost:5105
+2023-01-08 21:04:07.003 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-08 21:04:07.003 -03:00 [INF] Hosting environment: Development
+2023-01-08 21:04:07.003 -03:00 [INF] Content root path: /Users/nacho/Development/dotNet/restful_web_api/MagicVilla/src/MagicVilla_VillaAPI/
+2023-01-08 21:04:17.671 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/swagger/index.html - -
+2023-01-08 21:04:17.763 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/swagger/index.html - - - 200 - text/html;charset=utf-8 94.4477ms
+2023-01-08 21:04:17.847 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/swagger/v1/swagger.json - -
+2023-01-08 21:04:17.911 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 64.1480ms
+2023-01-08 21:04:18.626 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/swagger/index.html - -
+2023-01-08 21:04:18.628 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/swagger/index.html - - - 200 - text/html;charset=utf-8 1.8821ms
+2023-01-08 21:04:18.708 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/swagger/v1/swagger.json - -
+2023-01-08 21:04:18.724 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 16.0121ms
+2023-01-08 21:04:19.256 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/swagger/index.html - -
+2023-01-08 21:04:19.257 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/swagger/index.html - - - 200 - text/html;charset=utf-8 0.9026ms
+2023-01-08 21:04:19.335 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/swagger/v1/swagger.json - -
+2023-01-08 21:04:19.348 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 12.8920ms
+2023-01-08 21:04:19.910 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/swagger/index.html - -
+2023-01-08 21:04:19.911 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/swagger/index.html - - - 200 - text/html;charset=utf-8 0.8663ms
+2023-01-08 21:04:19.988 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7092/swagger/v1/swagger.json - -
+2023-01-08 21:04:20.003 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7092/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 14.3278ms
+2023-01-08 21:09:20.501 -03:00 [INF] Now listening on: https://localhost:7001
+2023-01-08 21:09:20.519 -03:00 [INF] Now listening on: http://localhost:5105
+2023-01-08 21:09:20.521 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-08 21:09:20.521 -03:00 [INF] Hosting environment: Development
+2023-01-08 21:09:20.521 -03:00 [INF] Content root path: /Users/nacho/Development/dotNet/restful_web_api/MagicVilla/MagicVilla_VillaAPI/
+2023-01-08 21:09:39.283 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/swagger/index.html - -
+2023-01-08 21:09:39.383 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/swagger/index.html - - - 200 - text/html;charset=utf-8 100.9642ms
+2023-01-08 21:09:39.395 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/swagger/swagger-ui-bundle.js - -
+2023-01-08 21:09:39.395 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/swagger/swagger-ui.css - -
+2023-01-08 21:09:39.403 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-01-08 21:09:39.403 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/swagger/swagger-ui.css - - - 200 143632 text/css 7.6008ms
+2023-01-08 21:09:39.403 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/swagger/swagger-ui-standalone-preset.js - -
+2023-01-08 21:09:39.405 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-01-08 21:09:39.406 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-01-08 21:09:39.406 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 11.4112ms
+2023-01-08 21:09:39.406 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 3.0003ms
+2023-01-08 21:09:39.483 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/swagger/v1/swagger.json - -
+2023-01-08 21:09:39.491 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/swagger/favicon-32x32.png - -
+2023-01-08 21:09:39.491 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-01-08 21:09:39.491 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/swagger/favicon-32x32.png - - - 200 628 image/png 0.2477ms
+2023-01-08 21:09:39.546 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 62.8521ms
+2023-01-08 21:59:14.148 -03:00 [INF] Now listening on: https://localhost:7001
+2023-01-08 21:59:14.162 -03:00 [INF] Now listening on: http://localhost:5105
+2023-01-08 21:59:14.164 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-08 21:59:14.164 -03:00 [INF] Hosting environment: Development
+2023-01-08 21:59:14.164 -03:00 [INF] Content root path: /Users/nacho/Development/dotNet/restful_web_api/MagicVilla/MagicVilla_VillaAPI/

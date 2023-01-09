@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/nacho/Development/dotNet/restful_web_api/MagicVilla_VillaAPI/MagicVilla_VillaAPI.csproj": {}
+    "/Users/nacho/Development/dotNet/restful_web_api/MagicVilla/MagicVilla_VillaAPI/MagicVilla_VillaAPI.csproj": {}
   },
   "projects": {
-    "/Users/nacho/Development/dotNet/restful_web_api/MagicVilla_VillaAPI/MagicVilla_VillaAPI.csproj": {
+    "/Users/nacho/Development/dotNet/restful_web_api/MagicVilla/MagicVilla_VillaAPI/MagicVilla_VillaAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nacho/Development/dotNet/restful_web_api/MagicVilla_VillaAPI/MagicVilla_VillaAPI.csproj",
+        "projectUniqueName": "/Users/nacho/Development/dotNet/restful_web_api/MagicVilla/MagicVilla_VillaAPI/MagicVilla_VillaAPI.csproj",
         "projectName": "MagicVilla_VillaAPI",
-        "projectPath": "/Users/nacho/Development/dotNet/restful_web_api/MagicVilla_VillaAPI/MagicVilla_VillaAPI.csproj",
+        "projectPath": "/Users/nacho/Development/dotNet/restful_web_api/MagicVilla/MagicVilla_VillaAPI/MagicVilla_VillaAPI.csproj",
         "packagesPath": "/Users/nacho/.nuget/packages/",
-        "outputPath": "/Users/nacho/Development/dotNet/restful_web_api/MagicVilla_VillaAPI/obj/",
+        "outputPath": "/Users/nacho/Development/dotNet/restful_web_api/MagicVilla/MagicVilla_VillaAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/nacho/.nuget/NuGet/NuGet.Config"
