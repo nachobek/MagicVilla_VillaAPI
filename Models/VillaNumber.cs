@@ -11,7 +11,7 @@ namespace MagicVilla_VillaAPI.Models
         [ForeignKey("Villa")]
         public int VillaId { get; set; } // Foreign key.
 
-        public Villa? Villa { get; set; } // This is required to tell to the ForeignKey attribute what model (table) it references to.
+        public Villa Villa { get; set; } // This is required to tell to the ForeignKey attribute what model (table) it references to.
 
         public string? SpecialDetails { get; set; }
 

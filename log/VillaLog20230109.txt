@@ -1,0 +1,438 @@
+2023-01-09 21:40:03.166 -03:00 [INF] Now listening on: https://localhost:7001
+2023-01-09 21:40:03.246 -03:00 [INF] Now listening on: http://localhost:5105
+2023-01-09 21:40:03.253 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-09 21:40:03.254 -03:00 [INF] Hosting environment: Development
+2023-01-09 21:40:03.254 -03:00 [INF] Content root path: C:\Users\ignacio.becerra\Documents\Development\restful_web_api\MagicVilla\MagicVilla_VillaAPI\
+2023-01-09 21:40:11.223 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger - -
+2023-01-09 21:40:12.535 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger - - - 301 0 - 1323.8950ms
+2023-01-09 21:40:12.718 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/index.html - -
+2023-01-09 21:40:14.424 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/swagger-ui.css - -
+2023-01-09 21:40:14.424 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/swagger-ui-bundle.js - -
+2023-01-09 21:40:14.443 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - -
+2023-01-09 21:40:14.424 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/index.html - - - 200 - text/html;charset=utf-8 1705.3845ms
+2023-01-09 21:40:14.496 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - -
+2023-01-09 21:40:14.505 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/swagger-ui-standalone-preset.js - -
+2023-01-09 21:40:14.576 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 133.6236ms
+2023-01-09 21:40:14.633 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-01-09 21:40:14.633 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-01-09 21:40:14.634 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 128.7688ms
+2023-01-09 21:40:14.634 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/swagger-ui.css - - - 200 143632 text/css 209.4469ms
+2023-01-09 21:40:14.671 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-01-09 21:40:14.671 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 247.3385ms
+2023-01-09 21:40:14.765 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 268.9919ms
+2023-01-09 21:40:15.121 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/v1/swagger.json - -
+2023-01-09 21:40:15.238 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/favicon-32x32.png - -
+2023-01-09 21:40:15.238 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-01-09 21:40:15.240 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/favicon-32x32.png - - - 200 628 image/png 0.7463ms
+2023-01-09 21:40:15.731 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 610.0107ms
+2023-01-09 22:40:27.450 -03:00 [INF] Executed DbCommand (206ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [Magic_VillaAPI];
+2023-01-09 22:40:27.538 -03:00 [INF] Executed DbCommand (67ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [Magic_VillaAPI] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2023-01-09 22:40:27.549 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-01-09 22:40:27.608 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2023-01-09 22:40:27.610 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-01-09 22:40:27.623 -03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-01-09 22:40:27.630 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-01-09 22:40:27.641 -03:00 [INF] Applying migration '20221227214936_InitialCreate'.
+2023-01-09 22:40:27.658 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Villas] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Details] nvarchar(max) NOT NULL,
+    [Rate] float NOT NULL,
+    [Sqft] int NOT NULL,
+    [Occupancy] int NOT NULL,
+    [ImageUrl] nvarchar(max) NOT NULL,
+    [Amenity] nvarchar(max) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    [UpdatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Villas] PRIMARY KEY ([Id])
+);
+2023-01-09 22:40:27.661 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20221227214936_InitialCreate', N'7.0.1');
+2023-01-09 22:40:27.664 -03:00 [INF] Applying migration '20221228195516_SeedVillaTable'.
+2023-01-09 22:40:27.708 -03:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Amenity', N'CreatedDate', N'Details', N'ImageUrl', N'Name', N'Occupancy', N'Rate', N'Sqft', N'UpdatedDate') AND [object_id] = OBJECT_ID(N'[Villas]'))
+    SET IDENTITY_INSERT [Villas] ON;
+INSERT INTO [Villas] ([Id], [Amenity], [CreatedDate], [Details], [ImageUrl], [Name], [Occupancy], [Rate], [Sqft], [UpdatedDate])
+VALUES (1, N'', '0001-01-01T00:00:00.0000000', N'Fusce 11 tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.', N'https://dotnetmasteryimages.blob.core.windows.net/bluevillaimages/villa3.jpg', N'Royal Villa', 4, 200.0E0, 550, '0001-01-01T00:00:00.0000000'),
+(2, N'', '0001-01-01T00:00:00.0000000', N'Fusce 11 tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.', N'https://dotnetmasteryimages.blob.core.windows.net/bluevillaimages/villa1.jpg', N'Premium Pool Villa', 4, 300.0E0, 550, '0001-01-01T00:00:00.0000000'),
+(3, N'', '0001-01-01T00:00:00.0000000', N'Fusce 11 tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.', N'https://dotnetmasteryimages.blob.core.windows.net/bluevillaimages/villa4.jpg', N'Luxury Pool Villa', 4, 400.0E0, 750, '0001-01-01T00:00:00.0000000'),
+(4, N'', '0001-01-01T00:00:00.0000000', N'Fusce 11 tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.', N'https://dotnetmasteryimages.blob.core.windows.net/bluevillaimages/villa5.jpg', N'Diamond Villa', 4, 550.0E0, 900, '0001-01-01T00:00:00.0000000'),
+(5, N'', '0001-01-01T00:00:00.0000000', N'Fusce 11 tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.', N'https://dotnetmasteryimages.blob.core.windows.net/bluevillaimages/villa2.jpg', N'Diamond Pool Villa', 4, 600.0E0, 1100, '0001-01-01T00:00:00.0000000');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Amenity', N'CreatedDate', N'Details', N'ImageUrl', N'Name', N'Occupancy', N'Rate', N'Sqft', N'UpdatedDate') AND [object_id] = OBJECT_ID(N'[Villas]'))
+    SET IDENTITY_INSERT [Villas] OFF;
+2023-01-09 22:40:27.708 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20221228195516_SeedVillaTable', N'7.0.1');
+2023-01-09 22:40:27.710 -03:00 [INF] Applying migration '20221228195925_SeedVillaTableWithCreatedDate'.
+2023-01-09 22:40:27.722 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2022-12-28T16:59:25.1518200-03:00'
+WHERE [Id] = 1;
+SELECT @@ROWCOUNT;
+2023-01-09 22:40:27.723 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2022-12-28T16:59:25.1518220-03:00'
+WHERE [Id] = 2;
+SELECT @@ROWCOUNT;
+2023-01-09 22:40:27.723 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2022-12-28T16:59:25.1518220-03:00'
+WHERE [Id] = 3;
+SELECT @@ROWCOUNT;
+2023-01-09 22:40:27.724 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2022-12-28T16:59:25.1518230-03:00'
+WHERE [Id] = 4;
+SELECT @@ROWCOUNT;
+2023-01-09 22:40:27.724 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2022-12-28T16:59:25.1518230-03:00'
+WHERE [Id] = 5;
+SELECT @@ROWCOUNT;
+2023-01-09 22:40:27.725 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20221228195925_SeedVillaTableWithCreatedDate', N'7.0.1');
+2023-01-09 22:40:27.725 -03:00 [INF] Applying migration '20230107154939_AddVillaNumber'.
+2023-01-09 22:40:27.734 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [VillaNumbers] (
+    [VillaNo] int NOT NULL,
+    [SpecialDetails] nvarchar(max) NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    [UpdatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_VillaNumbers] PRIMARY KEY ([VillaNo])
+);
+2023-01-09 22:40:27.742 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'VillaNo', N'CreatedDate', N'SpecialDetails', N'UpdatedDate') AND [object_id] = OBJECT_ID(N'[VillaNumbers]'))
+    SET IDENTITY_INSERT [VillaNumbers] ON;
+INSERT INTO [VillaNumbers] ([VillaNo], [CreatedDate], [SpecialDetails], [UpdatedDate])
+VALUES (101, '2023-01-07T12:49:39.3544720-03:00', N'', '0001-01-01T00:00:00.0000000'),
+(201, '2023-01-07T12:49:39.3544720-03:00', N'', '0001-01-01T00:00:00.0000000'),
+(301, '2023-01-07T12:49:39.3544720-03:00', N'', '0001-01-01T00:00:00.0000000'),
+(401, '2023-01-07T12:49:39.3544720-03:00', N'', '0001-01-01T00:00:00.0000000'),
+(501, '2023-01-07T12:49:39.3544730-03:00', N'', '0001-01-01T00:00:00.0000000');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'VillaNo', N'CreatedDate', N'SpecialDetails', N'UpdatedDate') AND [object_id] = OBJECT_ID(N'[VillaNumbers]'))
+    SET IDENTITY_INSERT [VillaNumbers] OFF;
+2023-01-09 22:40:27.742 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2023-01-07T12:49:39.3544630-03:00'
+WHERE [Id] = 1;
+SELECT @@ROWCOUNT;
+2023-01-09 22:40:27.743 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2023-01-07T12:49:39.3544650-03:00'
+WHERE [Id] = 2;
+SELECT @@ROWCOUNT;
+2023-01-09 22:40:27.743 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2023-01-07T12:49:39.3544660-03:00'
+WHERE [Id] = 3;
+SELECT @@ROWCOUNT;
+2023-01-09 22:40:27.744 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2023-01-07T12:49:39.3544660-03:00'
+WHERE [Id] = 4;
+SELECT @@ROWCOUNT;
+2023-01-09 22:40:27.744 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2023-01-07T12:49:39.3544660-03:00'
+WHERE [Id] = 5;
+SELECT @@ROWCOUNT;
+2023-01-09 22:40:27.745 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230107154939_AddVillaNumber', N'7.0.1');
+2023-01-09 22:40:27.746 -03:00 [INF] Applying migration '20230108002255_AddForeignKeyInVillaNumbers'.
+2023-01-09 22:40:27.762 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [VillaNumbers] ADD [VillaId] int NOT NULL DEFAULT 0;
+2023-01-09 22:40:27.764 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [VillaNumbers] SET [CreatedDate] = '2023-01-07T21:22:55.4742520-03:00', [VillaId] = 0
+WHERE [VillaNo] = 101;
+SELECT @@ROWCOUNT;
+2023-01-09 22:40:27.765 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [VillaNumbers] SET [CreatedDate] = '2023-01-07T21:22:55.4742520-03:00', [VillaId] = 0
+WHERE [VillaNo] = 201;
+SELECT @@ROWCOUNT;
+2023-01-09 22:40:27.766 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [VillaNumbers] SET [CreatedDate] = '2023-01-07T21:22:55.4742520-03:00', [VillaId] = 0
+WHERE [VillaNo] = 301;
+SELECT @@ROWCOUNT;
+2023-01-09 22:40:27.766 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [VillaNumbers] SET [CreatedDate] = '2023-01-07T21:22:55.4742520-03:00', [VillaId] = 0
+WHERE [VillaNo] = 401;
+SELECT @@ROWCOUNT;
+2023-01-09 22:40:27.767 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [VillaNumbers] SET [CreatedDate] = '2023-01-07T21:22:55.4742530-03:00', [VillaId] = 0
+WHERE [VillaNo] = 501;
+SELECT @@ROWCOUNT;
+2023-01-09 22:40:27.767 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2023-01-07T21:22:55.4742420-03:00'
+WHERE [Id] = 1;
+SELECT @@ROWCOUNT;
+2023-01-09 22:40:27.768 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2023-01-07T21:22:55.4742440-03:00'
+WHERE [Id] = 2;
+SELECT @@ROWCOUNT;
+2023-01-09 22:40:27.768 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2023-01-07T21:22:55.4742450-03:00'
+WHERE [Id] = 3;
+SELECT @@ROWCOUNT;
+2023-01-09 22:40:27.769 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2023-01-07T21:22:55.4742470-03:00'
+WHERE [Id] = 4;
+SELECT @@ROWCOUNT;
+2023-01-09 22:40:27.769 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2023-01-07T21:22:55.4742470-03:00'
+WHERE [Id] = 5;
+SELECT @@ROWCOUNT;
+2023-01-09 22:40:27.773 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_VillaNumbers_VillaId] ON [VillaNumbers] ([VillaId]);
+2023-01-09 22:40:27.776 -03:00 [ERR] Failed executing DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [VillaNumbers] ADD CONSTRAINT [FK_VillaNumbers_Villas_VillaId] FOREIGN KEY ([VillaId]) REFERENCES [Villas] ([Id]) ON DELETE CASCADE;
+2023-01-09 22:42:47.437 -03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-01-09 22:42:47.481 -03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-01-09 22:42:47.484 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-01-09 22:42:47.485 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-01-09 22:42:47.504 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-01-09 22:42:47.517 -03:00 [INF] Applying migration '20230108002255_AddForeignKeyInVillaNumbers'.
+2023-01-09 22:42:47.567 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [VillaNumbers] ADD [VillaId] int NOT NULL DEFAULT 0;
+2023-01-09 22:42:47.570 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [VillaNumbers] SET [CreatedDate] = '2023-01-07T21:22:55.4742520-03:00', [VillaId] = 0
+WHERE [VillaNo] = 101;
+SELECT @@ROWCOUNT;
+2023-01-09 22:42:47.570 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [VillaNumbers] SET [CreatedDate] = '2023-01-07T21:22:55.4742520-03:00', [VillaId] = 0
+WHERE [VillaNo] = 201;
+SELECT @@ROWCOUNT;
+2023-01-09 22:42:47.571 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [VillaNumbers] SET [CreatedDate] = '2023-01-07T21:22:55.4742520-03:00', [VillaId] = 0
+WHERE [VillaNo] = 301;
+SELECT @@ROWCOUNT;
+2023-01-09 22:42:47.572 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [VillaNumbers] SET [CreatedDate] = '2023-01-07T21:22:55.4742520-03:00', [VillaId] = 0
+WHERE [VillaNo] = 401;
+SELECT @@ROWCOUNT;
+2023-01-09 22:42:47.572 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [VillaNumbers] SET [CreatedDate] = '2023-01-07T21:22:55.4742530-03:00', [VillaId] = 0
+WHERE [VillaNo] = 501;
+SELECT @@ROWCOUNT;
+2023-01-09 22:42:47.572 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2023-01-07T21:22:55.4742420-03:00'
+WHERE [Id] = 1;
+SELECT @@ROWCOUNT;
+2023-01-09 22:42:47.573 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2023-01-07T21:22:55.4742440-03:00'
+WHERE [Id] = 2;
+SELECT @@ROWCOUNT;
+2023-01-09 22:42:47.573 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2023-01-07T21:22:55.4742450-03:00'
+WHERE [Id] = 3;
+SELECT @@ROWCOUNT;
+2023-01-09 22:42:47.573 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2023-01-07T21:22:55.4742470-03:00'
+WHERE [Id] = 4;
+SELECT @@ROWCOUNT;
+2023-01-09 22:42:47.574 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2023-01-07T21:22:55.4742470-03:00'
+WHERE [Id] = 5;
+SELECT @@ROWCOUNT;
+2023-01-09 22:42:47.575 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_VillaNumbers_VillaId] ON [VillaNumbers] ([VillaId]);
+2023-01-09 22:42:47.579 -03:00 [ERR] Failed executing DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [VillaNumbers] ADD CONSTRAINT [FK_VillaNumbers_Villas_VillaId] FOREIGN KEY ([VillaId]) REFERENCES [Villas] ([Id]) ON DELETE CASCADE;
+2023-01-09 22:43:21.625 -03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-01-09 22:43:21.666 -03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-01-09 22:43:21.669 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-01-09 22:43:21.669 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-01-09 22:43:21.685 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-01-09 22:43:21.697 -03:00 [INF] Applying migration '20230108002255_AddForeignKeyInVillaNumbers'.
+2023-01-09 22:43:21.744 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [VillaNumbers] ADD [VillaId] int NOT NULL DEFAULT 0;
+2023-01-09 22:43:21.747 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [VillaNumbers] SET [CreatedDate] = '2023-01-07T21:22:55.4742520-03:00', [VillaId] = 0
+WHERE [VillaNo] = 101;
+SELECT @@ROWCOUNT;
+2023-01-09 22:43:21.748 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [VillaNumbers] SET [CreatedDate] = '2023-01-07T21:22:55.4742520-03:00', [VillaId] = 0
+WHERE [VillaNo] = 201;
+SELECT @@ROWCOUNT;
+2023-01-09 22:43:21.749 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [VillaNumbers] SET [CreatedDate] = '2023-01-07T21:22:55.4742520-03:00', [VillaId] = 0
+WHERE [VillaNo] = 301;
+SELECT @@ROWCOUNT;
+2023-01-09 22:43:21.750 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [VillaNumbers] SET [CreatedDate] = '2023-01-07T21:22:55.4742520-03:00', [VillaId] = 0
+WHERE [VillaNo] = 401;
+SELECT @@ROWCOUNT;
+2023-01-09 22:43:21.750 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [VillaNumbers] SET [CreatedDate] = '2023-01-07T21:22:55.4742530-03:00', [VillaId] = 0
+WHERE [VillaNo] = 501;
+SELECT @@ROWCOUNT;
+2023-01-09 22:43:21.751 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2023-01-07T21:22:55.4742420-03:00'
+WHERE [Id] = 1;
+SELECT @@ROWCOUNT;
+2023-01-09 22:43:21.751 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2023-01-07T21:22:55.4742440-03:00'
+WHERE [Id] = 2;
+SELECT @@ROWCOUNT;
+2023-01-09 22:43:21.752 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2023-01-07T21:22:55.4742450-03:00'
+WHERE [Id] = 3;
+SELECT @@ROWCOUNT;
+2023-01-09 22:43:21.752 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2023-01-07T21:22:55.4742470-03:00'
+WHERE [Id] = 4;
+SELECT @@ROWCOUNT;
+2023-01-09 22:43:21.752 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2023-01-07T21:22:55.4742470-03:00'
+WHERE [Id] = 5;
+SELECT @@ROWCOUNT;
+2023-01-09 22:43:21.754 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_VillaNumbers_VillaId] ON [VillaNumbers] ([VillaId]);
+2023-01-09 22:43:21.758 -03:00 [ERR] Failed executing DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [VillaNumbers] ADD CONSTRAINT [FK_VillaNumbers_Villas_VillaId] FOREIGN KEY ([VillaId]) REFERENCES [Villas] ([Id]) ON DELETE CASCADE;
+2023-01-09 22:48:38.508 -03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-01-09 22:48:38.551 -03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-01-09 22:48:38.554 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-01-09 22:48:38.555 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-01-09 22:48:38.569 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-01-09 22:48:38.582 -03:00 [INF] Applying migration '20230108002255_AddForeignKeyInVillaNumbers'.
+2023-01-09 22:48:38.626 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [VillaNumbers] ADD [VillaId] int NOT NULL DEFAULT 0;
+2023-01-09 22:48:38.629 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [VillaNumbers] SET [CreatedDate] = '2023-01-07T21:22:55.4742520-03:00', [VillaId] = 0
+WHERE [VillaNo] = 101;
+SELECT @@ROWCOUNT;
+2023-01-09 22:48:38.630 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [VillaNumbers] SET [CreatedDate] = '2023-01-07T21:22:55.4742520-03:00', [VillaId] = 0
+WHERE [VillaNo] = 201;
+SELECT @@ROWCOUNT;
+2023-01-09 22:48:38.631 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [VillaNumbers] SET [CreatedDate] = '2023-01-07T21:22:55.4742520-03:00', [VillaId] = 0
+WHERE [VillaNo] = 301;
+SELECT @@ROWCOUNT;
+2023-01-09 22:48:38.631 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [VillaNumbers] SET [CreatedDate] = '2023-01-07T21:22:55.4742520-03:00', [VillaId] = 0
+WHERE [VillaNo] = 401;
+SELECT @@ROWCOUNT;
+2023-01-09 22:48:38.632 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [VillaNumbers] SET [CreatedDate] = '2023-01-07T21:22:55.4742530-03:00', [VillaId] = 0
+WHERE [VillaNo] = 501;
+SELECT @@ROWCOUNT;
+2023-01-09 22:48:38.632 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2023-01-07T21:22:55.4742420-03:00'
+WHERE [Id] = 1;
+SELECT @@ROWCOUNT;
+2023-01-09 22:48:38.633 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2023-01-07T21:22:55.4742440-03:00'
+WHERE [Id] = 2;
+SELECT @@ROWCOUNT;
+2023-01-09 22:48:38.633 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2023-01-07T21:22:55.4742450-03:00'
+WHERE [Id] = 3;
+SELECT @@ROWCOUNT;
+2023-01-09 22:48:38.634 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2023-01-07T21:22:55.4742470-03:00'
+WHERE [Id] = 4;
+SELECT @@ROWCOUNT;
+2023-01-09 22:48:38.634 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Villas] SET [CreatedDate] = '2023-01-07T21:22:55.4742470-03:00'
+WHERE [Id] = 5;
+SELECT @@ROWCOUNT;
+2023-01-09 22:48:38.636 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_VillaNumbers_VillaId] ON [VillaNumbers] ([VillaId]);
+2023-01-09 22:48:38.640 -03:00 [ERR] Failed executing DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [VillaNumbers] ADD CONSTRAINT [FK_VillaNumbers_Villas_VillaId] FOREIGN KEY ([VillaId]) REFERENCES [Villas] ([Id]) ON DELETE CASCADE;
+2023-01-09 22:53:10.439 -03:00 [INF] Executed DbCommand (199ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [Magic_VillaAPI];
+2023-01-09 22:53:10.520 -03:00 [INF] Executed DbCommand (60ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [Magic_VillaAPI] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2023-01-09 22:53:10.533 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-01-09 22:53:10.589 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2023-01-09 22:53:10.591 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-01-09 22:53:10.603 -03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-01-09 22:53:10.610 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-01-09 22:53:10.621 -03:00 [INF] Applying migration '20230110015135_InitialVersion'.
+2023-01-09 22:53:10.662 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Villas] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Details] nvarchar(max) NOT NULL,
+    [Rate] float NOT NULL,
+    [Sqft] int NOT NULL,
+    [Occupancy] int NOT NULL,
+    [ImageUrl] nvarchar(max) NOT NULL,
+    [Amenity] nvarchar(max) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    [UpdatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Villas] PRIMARY KEY ([Id])
+);
+2023-01-09 22:53:10.665 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [VillaNumbers] (
+    [VillaNo] int NOT NULL,
+    [VillaId] int NOT NULL,
+    [SpecialDetails] nvarchar(max) NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    [UpdatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_VillaNumbers] PRIMARY KEY ([VillaNo]),
+    CONSTRAINT [FK_VillaNumbers_Villas_VillaId] FOREIGN KEY ([VillaId]) REFERENCES [Villas] ([Id]) ON DELETE CASCADE
+);
+2023-01-09 22:53:10.686 -03:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Amenity', N'CreatedDate', N'Details', N'ImageUrl', N'Name', N'Occupancy', N'Rate', N'Sqft', N'UpdatedDate') AND [object_id] = OBJECT_ID(N'[Villas]'))
+    SET IDENTITY_INSERT [Villas] ON;
+INSERT INTO [Villas] ([Id], [Amenity], [CreatedDate], [Details], [ImageUrl], [Name], [Occupancy], [Rate], [Sqft], [UpdatedDate])
+VALUES (1, N'', '2023-01-09T22:51:35.5733618-03:00', N'Fusce 11 tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.', N'https://dotnetmasteryimages.blob.core.windows.net/bluevillaimages/villa3.jpg', N'Royal Villa', 4, 200.0E0, 550, '0001-01-01T00:00:00.0000000'),
+(2, N'', '2023-01-09T22:51:35.5733629-03:00', N'Fusce 11 tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.', N'https://dotnetmasteryimages.blob.core.windows.net/bluevillaimages/villa1.jpg', N'Premium Pool Villa', 4, 300.0E0, 550, '0001-01-01T00:00:00.0000000'),
+(3, N'', '2023-01-09T22:51:35.5733630-03:00', N'Fusce 11 tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.', N'https://dotnetmasteryimages.blob.core.windows.net/bluevillaimages/villa4.jpg', N'Luxury Pool Villa', 4, 400.0E0, 750, '0001-01-01T00:00:00.0000000'),
+(4, N'', '2023-01-09T22:51:35.5733631-03:00', N'Fusce 11 tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.', N'https://dotnetmasteryimages.blob.core.windows.net/bluevillaimages/villa5.jpg', N'Diamond Villa', 4, 550.0E0, 900, '0001-01-01T00:00:00.0000000'),
+(5, N'', '2023-01-09T22:51:35.5733632-03:00', N'Fusce 11 tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.', N'https://dotnetmasteryimages.blob.core.windows.net/bluevillaimages/villa2.jpg', N'Diamond Pool Villa', 4, 600.0E0, 1100, '0001-01-01T00:00:00.0000000');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Amenity', N'CreatedDate', N'Details', N'ImageUrl', N'Name', N'Occupancy', N'Rate', N'Sqft', N'UpdatedDate') AND [object_id] = OBJECT_ID(N'[Villas]'))
+    SET IDENTITY_INSERT [Villas] OFF;
+2023-01-09 22:53:10.687 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_VillaNumbers_VillaId] ON [VillaNumbers] ([VillaId]);
+2023-01-09 22:53:10.688 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230110015135_InitialVersion', N'7.0.1');

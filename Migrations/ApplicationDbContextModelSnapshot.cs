@@ -70,7 +70,7 @@ namespace MagicVillaVillaAPI.Migrations
                         {
                             Id = 1,
                             Amenity = "",
-                            CreatedDate = new DateTime(2023, 1, 7, 21, 22, 55, 474, DateTimeKind.Local).AddTicks(2420),
+                            CreatedDate = new DateTime(2023, 1, 9, 22, 51, 35, 573, DateTimeKind.Local).AddTicks(3618),
                             Details = "Fusce 11 tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.",
                             ImageUrl = "https://dotnetmasteryimages.blob.core.windows.net/bluevillaimages/villa3.jpg",
                             Name = "Royal Villa",
@@ -83,7 +83,7 @@ namespace MagicVillaVillaAPI.Migrations
                         {
                             Id = 2,
                             Amenity = "",
-                            CreatedDate = new DateTime(2023, 1, 7, 21, 22, 55, 474, DateTimeKind.Local).AddTicks(2440),
+                            CreatedDate = new DateTime(2023, 1, 9, 22, 51, 35, 573, DateTimeKind.Local).AddTicks(3629),
                             Details = "Fusce 11 tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.",
                             ImageUrl = "https://dotnetmasteryimages.blob.core.windows.net/bluevillaimages/villa1.jpg",
                             Name = "Premium Pool Villa",
@@ -96,7 +96,7 @@ namespace MagicVillaVillaAPI.Migrations
                         {
                             Id = 3,
                             Amenity = "",
-                            CreatedDate = new DateTime(2023, 1, 7, 21, 22, 55, 474, DateTimeKind.Local).AddTicks(2450),
+                            CreatedDate = new DateTime(2023, 1, 9, 22, 51, 35, 573, DateTimeKind.Local).AddTicks(3630),
                             Details = "Fusce 11 tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.",
                             ImageUrl = "https://dotnetmasteryimages.blob.core.windows.net/bluevillaimages/villa4.jpg",
                             Name = "Luxury Pool Villa",
@@ -109,7 +109,7 @@ namespace MagicVillaVillaAPI.Migrations
                         {
                             Id = 4,
                             Amenity = "",
-                            CreatedDate = new DateTime(2023, 1, 7, 21, 22, 55, 474, DateTimeKind.Local).AddTicks(2470),
+                            CreatedDate = new DateTime(2023, 1, 9, 22, 51, 35, 573, DateTimeKind.Local).AddTicks(3631),
                             Details = "Fusce 11 tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.",
                             ImageUrl = "https://dotnetmasteryimages.blob.core.windows.net/bluevillaimages/villa5.jpg",
                             Name = "Diamond Villa",
@@ -122,7 +122,7 @@ namespace MagicVillaVillaAPI.Migrations
                         {
                             Id = 5,
                             Amenity = "",
-                            CreatedDate = new DateTime(2023, 1, 7, 21, 22, 55, 474, DateTimeKind.Local).AddTicks(2470),
+                            CreatedDate = new DateTime(2023, 1, 9, 22, 51, 35, 573, DateTimeKind.Local).AddTicks(3632),
                             Details = "Fusce 11 tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.",
                             ImageUrl = "https://dotnetmasteryimages.blob.core.windows.net/bluevillaimages/villa2.jpg",
                             Name = "Diamond Pool Villa",
@@ -155,48 +155,6 @@ namespace MagicVillaVillaAPI.Migrations
                     b.HasIndex("VillaId");
 
                     b.ToTable("VillaNumbers");
-
-                    b.HasData(
-                        new
-                        {
-                            VillaNo = 101,
-                            CreatedDate = new DateTime(2023, 1, 7, 21, 22, 55, 474, DateTimeKind.Local).AddTicks(2520),
-                            SpecialDetails = "",
-                            UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            VillaId = 0
-                        },
-                        new
-                        {
-                            VillaNo = 201,
-                            CreatedDate = new DateTime(2023, 1, 7, 21, 22, 55, 474, DateTimeKind.Local).AddTicks(2520),
-                            SpecialDetails = "",
-                            UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            VillaId = 0
-                        },
-                        new
-                        {
-                            VillaNo = 301,
-                            CreatedDate = new DateTime(2023, 1, 7, 21, 22, 55, 474, DateTimeKind.Local).AddTicks(2520),
-                            SpecialDetails = "",
-                            UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            VillaId = 0
-                        },
-                        new
-                        {
-                            VillaNo = 401,
-                            CreatedDate = new DateTime(2023, 1, 7, 21, 22, 55, 474, DateTimeKind.Local).AddTicks(2520),
-                            SpecialDetails = "",
-                            UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            VillaId = 0
-                        },
-                        new
-                        {
-                            VillaNo = 501,
-                            CreatedDate = new DateTime(2023, 1, 7, 21, 22, 55, 474, DateTimeKind.Local).AddTicks(2530),
-                            SpecialDetails = "",
-                            UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            VillaId = 0
-                        });
                 });
 
             modelBuilder.Entity("MagicVilla_VillaAPI.Models.VillaNumber", b =>

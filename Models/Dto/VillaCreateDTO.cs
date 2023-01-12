@@ -16,7 +16,6 @@ namespace MagicVilla_VillaAPI.Models.Dto
 
         public int Sqft { get; set; }
 
-        [Required]
         public double Rate {get; set;}
 
         public int Occupancy { get; set; }
