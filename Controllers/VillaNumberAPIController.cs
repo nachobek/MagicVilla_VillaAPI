@@ -32,11 +32,11 @@ namespace MagicVilla_VillaAPI.Controllers
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<APIResponse>> GetAllVillaNumbers()
+        public async Task<ActionResult<APIResponse>> GetVillaNumbers()
         {
             try
             {
-                var villaNumbersList = await _villaNumberRepository.GetAllAsync();
+                var villaNumbersList = await _villaNumberRepository.GetAllAsync(includeProperties:"Villa");
 
                 if (villaNumbersList == null)
                 {
@@ -66,7 +66,7 @@ namespace MagicVilla_VillaAPI.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<APIResponse>> GetAllVillaNumber(int villaNo)
+        public async Task<ActionResult<APIResponse>> GetVillaNumbers(int villaNo)
         {
             try
             {
