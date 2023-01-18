@@ -20,6 +20,7 @@ builder.Services.AddAutoMapper(typeof(MappingConfig));
 // Adding reference to IRepository.
 builder.Services.AddScoped<IVillaRepository, VillaRepository>();
 builder.Services.AddScoped<IVillaNumberRepository, VillaNumberRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 // Since we installed the Serilog package to log messages to a flat file. We need to modify the default Log implementation/settings so it uses Serilog.
 // First we set up Serilog the way we want it.

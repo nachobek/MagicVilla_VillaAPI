@@ -128,7 +128,7 @@ namespace MagicVilla_VillaAPI.Controllers
                 {
                     var errorMessage = "Villa already exists.";
 
-                    ModelState.AddModelError("CustomError", errorMessage); // CustomError is the key of the error message we are adding to ModelState.
+                    ModelState.AddModelError("ErrorMessages", errorMessage); // CustomError is the key of the error message we are adding to ModelState.
 
                     _response.Result = ModelState;
                     _response.StatusCode = HttpStatusCode.BadRequest;
